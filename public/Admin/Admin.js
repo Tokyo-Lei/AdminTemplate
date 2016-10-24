@@ -36,14 +36,14 @@
 
 
 $(document).ready(function(){
-    $(".list-group li").click(function(){
+    $(".list-group li").mouseover(function(){
 
-        $(this).addClass("active");
-        $(this).siblings(".list-group li").removeClass("active");
+        // $(this).addClass("active");
+        // $(this).siblings(".list-group li").removeClass("active");
 
         $(this).siblings("ul").addClass("hide-nva");
         $(this).next("ul").removeClass("hide-nva");
-
-
     })
+
+    
 });
