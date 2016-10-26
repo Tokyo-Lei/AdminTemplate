@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdminTemplate (Aimee2.0) - 后台管理系统</title>
+    <!-- Bootstrap 主题 CSS 文件 -->
+    <link rel="stylesheet" href="../../public/Yeti/bootstrap.css">
+    <!--<link rel="stylesheet" href="../../public/Bootstrap3.3.7/css/bootstrap.css">-->
+    <link rel="stylesheet" href="../../public/Admin/Admin.css">
+</head>
+<body>
+
+<!--navbar navbar-inverse navbar-fixed-top-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AdminTemplate (Aimee2.0)</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">用户</a></li>
+                <li><a href="#">高级</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">操作 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">前台页面</a></li>
+                        <li><a href="#">更新缓存</a></li>
+                        <li><a href="#">安全退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="搜索站内文章">
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+   
+        <div class="col-lg-2 col-md-2 col-sm-3 sidebar">
+
+          
+
+               <div class="panel-group table-responsive" role="tablist">
+                    <div class="panel panel-default leftMenu panel-nav1">
+                        <div class="panel-heading" id="List-nav1" >
+                            <h4 class="panel-title" id="panel1" data-toggle="collapse" data-target="#List-nav-Group1" role="tab" >
+                                快速操作
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="List-nav-Group1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="List-nav1">
+                                <ul class="list-group">
+                                      <li class="list-group-item">
+                                             <a href="#" class="items"><span class="glyphicon glyphicon-pencil"></span>撰写内容</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                             <a href="#" class="items"><span class="glyphicon glyphicon-shopping-cart"></span>发布产品</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                            <a href="#" class="items"> <span class="glyphicon glyphicon-random"></span>群发通知</a>
+                                      </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!--panel end-->
+
+
+                    <div class="panel panel-default leftMenu panel-nav2">
+                        <div class="panel-heading" id="List-nav2" >
+                            <h4 class="panel-title" id="panel2" data-toggle="collapse" data-target="#List-nav-Group2" role="tab" >
+                                内容管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="List-nav-Group2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav2">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-pencil"></span>撰写内容</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-inbox"></span>我的草稿</a>
+                              </li>
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-list-alt"></span>管理内容</a>
+                              </li>
+  </li>
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-flag"></span>管理分类</a>
+                              </li>
+
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-tag"></span>管理标签</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav3">
+                        <div class="panel-heading" id="List-nav3" >
+                            <h4 class="panel-title" id="panel3" data-toggle="collapse" data-target="#collapseListGroup3" role="tab">
+                                产品管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav3">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-shopping-cart"></span>发布产品</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-edit"></span>管理产品</a>
+                              </li>
+
+                                <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-picture"></span>图片管理</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav4">
+                        <div class="panel-heading" id="List-nav4" >
+                            <h4 class="panel-title" id="panel4" data-toggle="collapse" data-target="#collapseListGroup4" role="tab" >
+                                用户管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav4">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-star-empty"></span>后台用户</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-user"></span>前台用户</a>
+                              </li>
+                               <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-ok"></span>权限配置</a>
+                              </li>
+
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav5">
+                        <div class="panel-heading" id="List-nav5"  >
+                            <h4 class="panel-title" id="panel5" data-toggle="collapse" data-target="#collapseListGroup5" role="tab" >
+                                页面管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav5">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-th-list"></span>管理导航</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-th-large"></span>管理单页</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+                  <div class="panel panel-default leftMenu panel-nav6">
+                        <div class="panel-heading" id="List-nav6" >
+                            <h4 class="panel-title" id="panel6" data-toggle="collapse" data-target="#collapseListGroup6" role="tab" >
+                                站点配置
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav6">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-home"></span>基本配置</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-download-alt"></span>备份还原</a>
+                              </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-wrench"></span>高级配置</a>
+                              </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-transfer"></span>API配置</a>
+                              </li>
+  </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-link"></span>插件管理</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>  
+
+
+                </div>
+            </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+
+
+    <h2 class="page-header fonth2">基本配置</h2>
+
+<!-- <div class="alert alert-dismissible alert-success">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>修改成功！</strong> 
+</div>
+   
+<div class="alert alert-dismissible alert-warning">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4>警告！</h4>
+  <p>此操作会出现问题！</p>
+</div>
+
+
+<div class="alert alert-dismissible alert-danger">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>修改失败！</strong> 
+</div>
+ -->
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#config1" data-toggle="tab" aria-expanded="true">站点设置</a></li>
+  <li class=""><a href="#config2" data-toggle="tab" aria-expanded="false">上传设置</a></li>
+  <li class=""><a href="#" data-toggle="tab" aria-expanded="false">图片设置</a></li>
+  <li class=""><a href="#" data-toggle="tab" aria-expanded="false">伪静态设置</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+      高级设置 <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="advanced_config.html" >支付宝设置</a></li>
+      <li><a href="advanced_config.html" >邮箱设置</a></li>
+      <li><a href="advanced_config.html" >QQ设置</a></li>
+      <li><a href="advanced_config.html" >微信设置</a></li>
+      <li class="divider"></li>
+      <li><a href="#dropdown2" data-toggle="tab">令牌验证</a></li>
+    </ul>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+
+
+  <div class="tab-pane fade active in" id="config1">
+   
+        <form class="form-horizontal">
+          <fieldset>
+           <br><br>
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">网站名称</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" >
+                </div>
+            </div>
+             <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">网站地址</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" >
+                </div>
+            </div>
+             <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">网站关键词</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" >
+                </div>
+            </div>
+              <div class="form-group">
+              <label for="textArea" class="col-lg-1 control-label">网站描述</label>
+              <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-lg-1 control-label">网站ICP</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputCopyright" >
+              </div>
+            </div>
+             <div class="form-group">
+              <label for="inputPassword" class="col-lg-1 control-label">站长邮箱</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputCopyright" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-lg-1 control-label">版权信息</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputCopyright" >
+              </div>
+            </div>
+           
+            <div class="form-group">
+              <label class="col-lg-1 control-label">网站开关</label>
+              <div class="col-lg-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                   开放
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    关闭
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-lg-1 control-label">关闭信息</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputCopyright" value="网站维护中，请稍候访问...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="select" class="col-lg-1 control-label">服务器时间</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select">
+                  <option>中国上海</option>
+                  <option>韩国首尔</option>
+                  <option>日本东京</option>
+                  <option>美国夏威夷</option>
+                  <option>美国洛杉矶</option>
+                  <option>美国纽约</option>
+                  <option>英国伦敦</option>
+                  <option>法国巴黎</option>
+                  <option>德国柏林</option>
+                  <option>俄罗斯莫斯科</option>
+                  <option>沙特阿拉伯迪拜</option>
+                  <option>新加坡</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-1">
+                <button type="submit" class="btn btn-primary">保存</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="tab-pane fade" id="config2">
+   
+
+
+
+
+            <form class="form-horizontal">
+          <fieldset>
+           <br><br>
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">上传类型</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" value="jpg,jpeg,gif,png,zip,rar,doc,txt,pem">
+                </div>
+            </div>
+             <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">上传大小</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" value="10000">
+                </div>
+            </div>
+             <div class="form-group">
+              <label for="inputEmail" class="col-lg-1 control-label">上传路径</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputWebname" value="Upload">
+                </div>
+            </div>
+           
+           
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-1">
+                <button type="submit" class="btn btn-primary">修改</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="tab-pane fade" id="dropdown1">
+    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+  </div>
+  <div class="tab-pane fade" id="dropdown2">
+    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<p>V<abbr title="最新版本号">2.0.1</abbr>  Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE"> MIT License</a></p>
+
+
+</div>
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../../public/Common/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!-- 自定 JavaScript 文件 -->
+<script src="../../public/Admin/Admin.js"></script>
+
+</body>
+</html>

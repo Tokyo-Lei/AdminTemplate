@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdminTemplate (Aimee2.0) - 后台管理系统</title>
+    <!-- Bootstrap 主题 CSS 文件 -->
+    <link rel="stylesheet" href="../../public/Yeti/bootstrap.css">
+    <!--<link rel="stylesheet" href="../../public/Bootstrap3.3.7/css/bootstrap.css">-->
+    <link rel="stylesheet" href="../../public/Admin/Admin.css">
+</head>
+<body>
+
+<!--navbar navbar-inverse navbar-fixed-top-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AdminTemplate (Aimee2.0)</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">用户</a></li>
+                <li><a href="#">高级</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">操作 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">前台页面</a></li>
+                        <li><a href="#">更新缓存</a></li>
+                        <li><a href="#">安全退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="搜索站内文章">
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+   
+        <div class="col-lg-2 col-md-2 col-sm-3 sidebar">
+
+          
+
+               <div class="panel-group table-responsive" role="tablist">
+                    <div class="panel panel-default leftMenu panel-nav1">
+                        <div class="panel-heading" id="List-nav1" >
+                            <h4 class="panel-title" id="panel1" data-toggle="collapse" data-target="#List-nav-Group1" role="tab" >
+                                快速操作
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="List-nav-Group1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="List-nav1">
+                                <ul class="list-group">
+                                      <li class="list-group-item">
+                                             <a href="#" class="items"><span class="glyphicon glyphicon-pencil"></span>撰写内容</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                             <a href="#" class="items"><span class="glyphicon glyphicon-shopping-cart"></span>发布产品</a>
+                                      </li>
+                                      <li class="list-group-item">
+                                            <a href="#" class="items"> <span class="glyphicon glyphicon-random"></span>群发通知</a>
+                                      </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!--panel end-->
+
+
+                    <div class="panel panel-default leftMenu panel-nav2">
+                        <div class="panel-heading" id="List-nav2" >
+                            <h4 class="panel-title" id="panel2" data-toggle="collapse" data-target="#List-nav-Group2" role="tab" >
+                                内容管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="List-nav-Group2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav2">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-pencil"></span>撰写内容</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-inbox"></span>我的草稿</a>
+                              </li>
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-list-alt"></span>管理内容</a>
+                              </li>
+  </li>
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-flag"></span>管理分类</a>
+                              </li>
+
+ <li class="list-group-item">
+                                    <a href="#" class="items"> <span class="glyphicon glyphicon-tag"></span>管理标签</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav3">
+                        <div class="panel-heading" id="List-nav3" >
+                            <h4 class="panel-title" id="panel3" data-toggle="collapse" data-target="#collapseListGroup3" role="tab">
+                                产品管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav3">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-shopping-cart"></span>发布产品</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-edit"></span>管理产品</a>
+                              </li>
+
+                                <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-picture"></span>图片管理</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav4">
+                        <div class="panel-heading" id="List-nav4" >
+                            <h4 class="panel-title" id="panel4" data-toggle="collapse" data-target="#collapseListGroup4" role="tab" >
+                                用户管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav4">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-star-empty"></span>后台用户</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-user"></span>前台用户</a>
+                              </li>
+                               <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-ok"></span>权限配置</a>
+                              </li>
+
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+
+
+                    <div class="panel panel-default leftMenu panel-nav5">
+                        <div class="panel-heading" id="List-nav5"  >
+                            <h4 class="panel-title" id="panel5" data-toggle="collapse" data-target="#collapseListGroup5" role="tab" >
+                                页面管理
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav5">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-th-list"></span>管理导航</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-th-large"></span>管理单页</a>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </div>  
+
+
+
+
+
+
+                  <div class="panel panel-default leftMenu panel-nav6">
+                        <div class="panel-heading" id="List-nav6" >
+                            <h4 class="panel-title" id="panel6" data-toggle="collapse" data-target="#collapseListGroup6" role="tab" >
+                                站点配置
+                                <span class="glyphicon glyphicon-chevron-down btn-xs right"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="List-nav6">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-home"></span>基本配置</a>
+                              </li>
+
+                             <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-download-alt"></span>备份还原</a>
+                              </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-wrench"></span>高级配置</a>
+                              </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-transfer"></span>API配置</a>
+                              </li>
+  </li>
+                                  <li class="list-group-item">
+                                     <a href="#" class="items"><span class="glyphicon glyphicon-link"></span>插件管理</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>  
+
+
+                </div>
+            </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+
+
+    <h2 class="page-header fonth2">基本概况</h2>
+
+<div class="alert alert-dismissible alert-success">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>恭喜安装成功！</strong> 目前版本2.0.1！
+</div>
+   
+
+ <div class="jumbotron">
+  <h1>Aimee 2</h1>
+  <p>离别多年，如今完美的归来，感谢HDPHP提供强力的框架。</p>
+  <p><a class="btn btn-primary ">帮助手册</a></p>
+</div>
+
+
+
+<hr>
+
+<p>V<abbr title="最新版本号">2.0.1</abbr>  Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE"> MIT License</a></p>
+
+
+</div>
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../../public/Common/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!-- 自定 JavaScript 文件 -->
+<script src="../../public/Admin/Admin.js"></script>
+
+</body>
+</html>

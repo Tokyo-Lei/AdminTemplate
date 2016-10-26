@@ -20,9 +20,19 @@ a {
 }
 .panel-title{
 cursor: pointer;
+-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+h4.panel-heading{
+-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background: #ddd;
 
 }
-
 .items {
   position: relative;
   display: block;
@@ -31,6 +41,10 @@ cursor: pointer;
   background-color: #ffffff;
  color: #555555;
   text-decoration: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 a.items:hover,
 .items:hover:focus {
@@ -43,6 +57,23 @@ a.items:hover,
     margin: 0px 10px 0px 10px;
 
 }
+
+
+
+@media screen and (min-width: 768px)
+.jumbotron {
+}
+.jumbotron {
+  padding-left: 40px;
+}
+
+
+
+
+
+
+
+
 /*
 .list-group{
     font-size: 14px;
@@ -98,7 +129,7 @@ a.items:hover,
  */
 
 .main {
-    padding: 20px;
+    padding: 80px 20px 0px 20px;
 }
 @media (min-width: 768px) {
     .main {
@@ -110,6 +141,23 @@ a.items:hover,
     margin-top: 0;
 }
 
+
+.fonth2{
+  font-family: "Microsoft YaHei";
+  font-weight: 400;
+  font-size: 24px;
+
+
+}
+.jumbotron h1{
+  font-family: Arial;
+font-weight: 100;
+}
+.jumbotron p{
+  font-size: 20px;
+
+
+}
 /*
  * Sidebar
  */
